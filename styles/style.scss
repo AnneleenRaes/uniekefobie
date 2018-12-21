@@ -165,10 +165,11 @@ body {
         font-size: 3rem;
         color: $color2;
         text-align: center;
-        margin: 60px 60px;
+        margin: 60px 0px;
 
         @media (min-width: $breekpunt-md) {
             font-size: 4rem;
+            margin: 60px 60px;
 
         }
     }
@@ -180,6 +181,7 @@ body {
         line-height: 2rem;
         text-align: left;
         margin: 0 32px;
+        margin-bottom: 72px;
 
 
 
@@ -246,6 +248,8 @@ body {
 
         @media (min-width: $breekpunt-md) {
             font-size: 4rem;
+            margin: 60px 0px;
+            
 
         }
     }
@@ -261,13 +265,22 @@ body {
 
 
         @media (min-width: $breekpunt-md) {
-            width: 300px;
-            margin: 60px 60px;
-            border-left: .5rem solid $color2;
+            width: 400px;
+            margin: 60px 0;
+            border-left: .2rem solid $color2;
             padding: 0 0 0 2rem;
         }
     }
 
+}
+
+.container-over {
+
+    .img-oorzaak {
+        @media (min-width: $breekpunt-md) {
+            margin-left: 90px;
+        }
+    }
 }
 
 
@@ -620,6 +633,7 @@ body {
             @media (min-width: $breekpunt-md) {
                 font-size: 4rem;
                 margin: 60px 0;
+                
     
             }
         }
@@ -647,7 +661,33 @@ body {
             color: $color3;
         }
 
-
+        .bttndoneer {
+     
+            display: block;
+            background-color: $color1;
+            color: $color2;
+            border: 1px solid $color2;
+            padding: 10px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: $fontset1;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            margin-top:40px;
+            margin-bottom: 72px;
+    
+            @media (min-width: $breekpunt-md) {
+                margin-top: 20px;
+                margin-bottom: 60px;
+            }
+        }
+    
+        .bttndoneer:hover {
+            background-color: $color2;
+            color: $color1;
+        }
     }
 
 
