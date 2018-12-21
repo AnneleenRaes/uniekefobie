@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:500,600,700');
+
+
+
+$color1: #FFFFFF;
+$color2: #9EAEBB;
+$color3: #707070;
+$color4: #000000;
+
+$alpha1: 0.5;
+$alpha2: 1;
+
+$fontset1: 'Montserrat',
+sans-serif;
+$fontset2: 'Lato',
+sans-serif;
+
+$breekpunt-s:576px;
+$breekpunt-md:768px;
+$breekpunt-l:992px;
+$breekpunt-xl:1200px;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $fontset2;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+
+}
+
+
+
+/* navigatie */
+
+
+.navbar {
+
+    .navbar-brand {
+        margin-left: 4%;
+
+        @media (min-width: $breekpunt-md) {
+
+            margin-left: 10%;
+        }
+    }
+
+    .navbar-brand:hover {
+        cursor: none;
+    }
+
+    .nav-link {
+        padding-right: 1em !important;
+        font-family: $fontset1;
+        font-size: 0.80rem;
+        transition: color .1s;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+
+    }
+
+    .navbar-nav a {
+        font-family: $fontset1;
+        color: $color3 !important;
+        margin: 0 15px;
+    }
+
+    .navbar-nav li.active {
+        border-bottom: 2px solid $color2;
+        color: $color4 !important;
+        font-weight: 900;
+
+    }
+
+    .navbar-nav li:hover:not(.active) {
+        background-color: $color2;
+
+    }
+
+}
+
+
+/* home */
+
+.header-home {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: url('../images/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    img {
+        margin-top: -100px;
+    }
+
+    h2 {
+        font-family: $fontset1;
+        font-size: 3rem;
+        color: $color2;
+        text-align: center;
+        margin: 60px 0;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 4rem;
+
+        }
+    }
+
+    p {
+        font-family: $fontset2;
+        font-size: 1rem;
+        color: $color1;
+        margin: 0 10% 100px 10%;
+        line-height: 2rem;
+        text-align: left;
+
+
+        @media (min-width: $breekpunt-md) {
+            width: 600px;
+            margin: 20px 0 0 0;
+        }
+    }
+
+    .bttn1 {
+        background-color: $color1;
+        color: $color2;
+        border: 1px solid $color2;
+        padding: 10px 50px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 700;
+        font-family: $fontset1;
+        display: block;
+        text-transform: uppercase;
+
+
+        @media (min-width: $breekpunt-md) {
+            margin-top: 50px;
+            width: 33%;
+        }
+    }
+
+    .bttn1:hover {
+        background-color: $color2;
+        color: $color1;
+    }
+
+}
+
+/* over */
+
+.featured-text {
+
+
+    h2 {
+        font-family: $fontset1;
+        font-size: 3rem;
+        color: $color2;
+        text-align: center;
+        margin: 60px 60px;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 4rem;
+
+        }
+    }
+
+    p {
+        font-family: $fontset2;
+        font-size: 1rem;
+        color: $color3;
+        line-height: 2rem;
+        text-align: left;
+        margin: 0 32px;
+
+
+
+        @media (min-width: $breekpunt-md) {
+            width: 400px;
+            margin: 60px 60px;
+            border-left: .2rem solid $color2;
+            padding: 0 0 0 2rem;
+        }
+    }
+
+    h3 {
+        font-family: $fontset2;
+        font-size: 1.4rem;
+        color: $color2;
+        text-align: center;
+
+        @media (min-width: $breekpunt-md) {
+            text-align: left;
+            width: 400px;
+            margin: 0 0 0 58px;
+        }
+
+
+    }
+
+    .bttn2 {
+        display: block;
+        background-color: $color1;
+        color: $color2;
+        border: 1px solid $color2;
+        padding: 10px 50px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 700;
+        font-family: $fontset1;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 80px 0;
+
+        @media (min-width: $breekpunt-md) {
+            margin-top: 12px;
+            margin-left: 58px;
+        }
+    }
+
+    .bttn2:hover {
+        background-color: $color2;
+        color: $color1;
+    }
+
+
+}
+
+.featured-text2 {
+
+
+    h2 {
+        font-family: $fontset1;
+        font-size: 3rem;
+        color: $color2;
+        text-align: center;
+        margin: 60px 60px;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 4rem;
+
+        }
+    }
+
+    p {
+        font-family: $fontset2;
+        font-size: 1rem;
+        color: $color3;
+        line-height: 2rem;
+        text-align: left;
+        margin: 0 32px;
+
+
+
+        @media (min-width: $breekpunt-md) {
+            width: 300px;
+            margin: 60px 60px;
+            border-left: .5rem solid $color2;
+            padding: 0 0 0 2rem;
+        }
+    }
+
+}
+
+
+/* agenda */
+
+
+
+
+.container-agendamidden {
+
+    .card {
+        min-height: 300px;
+        margin-bottom: 40px;
+        border: none;
+
+        @media (min-width: $breekpunt-md) {
+            border: 0.25px solid $color3 $alpha1;
+        }
+
+        .card-body {
+
+            @media (min-width: $breekpunt-md) {
+                padding: 3rem 0 3rem 0;
+            }
+        }
+
+        h4.card-subtitle {
+            font-family: $fontset1;
+            font-size: 1rem;
+            color: $color3;
+            margin-bottom: 32px;
+        }
+
+        h3.card-title {
+            font-family: $fontset1;
+            font-size: 1.5rem;
+            color: $color2;
+        }
+
+        p.card-text {
+            font-family: $fontset2;
+            font-size: 1rem;
+            color: $color4;
+            line-height: 2rem;
+
+        }
+    }
+
+
+
+    .bttn3 {
+        display: block;
+        background-color: $color1;
+        color: $color2;
+        border: 1px solid $color2;
+        padding: 10px 50px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 700;
+        font-family: $fontset1;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 80px;
+
+        @media (min-width: $breekpunt-md) {
+            margin-bottom: 72px;
+            width: 33.33%;
+            margin-left: 33.33%;
+        }
+    }
+
+    .bttn3:hover {
+        background-color: $color2;
+        color: $color1;
+    }
+
+
+
+}
+
+
+
+/* doneer */
+
+.titel-crowdfunding {
+
+    h2 {
+        font-family: $fontset1;
+        font-size: 3rem;
+        color: $color2;
+        text-align: left;
+        margin: 20px 0;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 4rem;
+
+        }
+    }
+}
+
+.thema {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+
+
+    img {
+        height: 30px;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    p {
+        font-family: $fontset2;
+        font-size: 0.9rem;
+        color: $color3;
+        line-height: 2rem;
+        text-align: left;
+        margin-left: 4px;
+
+
+        @media (min-width: $breekpunt-md) {
+            width: 200px;
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.info-support {
+
+    h5 {
+        font-family: $fontset2;
+        font-size: 1.4rem;
+        color: $color1;
+        background-color: $color2;
+        text-align: center;
+        margin: 20px 0;
+        padding: 10px;
+        margin-bottom: 40px;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 1.6rem;
+            padding: 15px;
+            margin-bottom: 100px;
+
+        }
+    }
+
+    p.amount {
+        font-family: $fontset2;
+        font-size: 2rem;
+        color: $color4;
+        line-height: 2rem;
+        margin-bottom: -20px;
+
+        @media (min-width: $breekpunt-md) {
+            margin-top: 20px;
+            margin-bottom: -20px;
+            font-size: 2.6rem;
+        }
+    }
+
+    p.amount2 {
+        font-family: $fontset2;
+        font-size: 1rem;
+        color: $color3;
+        line-height: 2rem;
+        text-align: right;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 1rem;
+        }
+    }
+
+    .progress-bar {
+        width: 100%;
+        background-color: white;
+        border: 1px solid $color2;
+        padding: 3px;
+        border-radius: 20px;
+
+        @media (min-width: $breekpunt-md) {
+            margin-top: 20px;
+        }
+    }
+
+    .progress-bar-fill {
+        height: 22px;
+        background-color: $color2;
+        border-radius: 20px;
+
+        @media (min-width: $breekpunt-md) {}
+
+    }
+
+    .extra-support {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .procent,
+        .supporters,
+        .deadline {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 100px;
+
+            p {
+                font-family: $fontset2;
+                font-size: 1rem;
+                color: $color3;
+
+            }
+
+            p.vet {
+                font-weight: bold;
+                color: $color4;
+            }
+
+
+        }
+    }
+
+    .bttnsupport {
+     
+            display: block;
+            background-color: $color1;
+            color: $color2;
+            border: 1px solid $color2;
+            padding: 10px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: $fontset1;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            margin-top:40px;
+    
+            @media (min-width: $breekpunt-md) {
+                margin-top: 120px;
+            }
+        }
+    
+        .bttnsupport:hover {
+            background-color: $color2;
+            color: $color1;
+        }
+
+        .socialmedia ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           
+        }
+
+        .socialmedia .fa {
+            text-decoration: none;
+            color: $color3 !important;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            
+            @media (min-width: $breekpunt-md) {
+                margin-top: 64px;
+            }
+        }
+    }
+
+    .col-beschrijving {
+
+        @media (min-width: $breekpunt-md) {
+            margin-top: 60px;
+            margin-bottom: 120px;
+
+        }
+       
+        
+        h2 {
+            font-family: $fontset1;
+            font-size: 3rem;
+            color: $color2;
+            text-align: center;
+            margin: 60px 0 40px 0;
+    
+            @media (min-width: $breekpunt-md) {
+                font-size: 4rem;
+                margin: 60px 0;
+    
+            }
+        }
+
+       
+
+        h3 {
+            font-family: $fontset1;
+            font-size: 1.3rem;
+            color: $color3;
+            text-align: left;
+            margin: 0 32px 20px 32px;
+    
+            @media (min-width: $breekpunt-md) {
+                font-size: 1.4rem;
+                margin:0 0 40px 0;
+    
+            }
+        }
+    
+        p {
+            font-family: $fontset2;
+            font-size: 1rem;
+            color: $color3;
+            line-height: 2rem;
+            text-align: left;
+            margin: 0 32px;
+    
+    
+    
+            @media (min-width: $breekpunt-md) {
+                width: 400px;
+                margin: 0;
+               
+              
+            }
+        }
+
+
+    }
+
+    .col-donaties {
+        @media (min-width: $breekpunt-md) {
+            margin-top: 60px;
+            margin-bottom: 120px;
+
+        }
+
+        h2 {
+            font-family: $fontset1;
+            font-size: 3rem;
+            color: $color2;
+            text-align: center;
+            margin: 60px 0 40px 0;
+    
+            @media (min-width: $breekpunt-md) {
+                font-size: 4rem;
+                margin: 60px 0;
+    
+            }
+        }
+
+        .tabel-hoofd {
+            background-color: $color2;
+            display: flex !important;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-family: $fontset1;
+            font-size: 1rem;
+            color: $color1;
+            text-transform: uppercase;
+            
+            p {
+                margin-bottom: 0;
+            }
+            
+        }
+
+        .tabel {
+           margin-left: 10px;
+            color: $color3;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+
+
+
+.form {
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    @media (min-width: $breekpunt-md) {
+        margin-top: 20%;
+    }
+
+    h2 {
+        font-family: $fontset1;
+        font-size: 3rem;
+        color: $color2;
+        text-align: center;
+        margin: 60px 60px;
+
+        @media (min-width: $breekpunt-md) {
+            font-size: 4rem;
+            text-align: left;
+            margin: 60px 0px;
+
+        }
+    }
+
+}
+
+
+input {
+    width: 100%;
+    margin: 20px 0;
+    background: white;
+    border: none;
+    border-bottom: 1px solid $color2;
+}
+
+#msg {
+    margin-top: 80px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+}
+
+.bttn4 {
+    display: block;
+    background-color: $color2;
+    color: $color1;
+    border: none;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-family: $fontset1;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40%;
+    margin: auto;
+
+    @media (min-width: $breekpunt-md) {
+        margin-top: 50px;
+    }
+
+}
+
+.bttn4:hover {
+    background-color: $color2;
+    color: $color1;
+}
+
+
+
+
+/** newsletter form ****/
+
+.container_newsletter {
+    background-color: $color2;
+    padding: 20px 40px;
+
+
+    @media (min-width: $breekpunt-md) {
+        padding: 10px 40px;
+        margin-top: 30%;
+
+
+    }
+
+    h3 {
+        font-family: $fontset1;
+        font-size: 2rem;
+        color: $color1;
+        text-align: center;
+        margin: 16px 0px;
+        text-transform: uppercase;
+
+
+        @media (min-width: $breekpunt-md) {}
+    }
+
+    p {
+        font-family: $fontset2;
+        font-size: 1rem;
+        color: $color3;
+        line-height: 2rem;
+        text-align: left;
+        margin: auto;
+
+        @media (min-width: $breekpunt-md) {}
+    }
+
+    .signup {
+        @media (min-width: $breekpunt-md) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        input[type=text_newsletter] {
+            width: 100%;
+            padding: 12px;
+            display: inline-block;
+            box-sizing: border-box;
+            font-family: $fontset1;
+            font-size: 1rem;
+            color: $color1;
+            text-align: center;
+            margin: 16px 0px;
+            text-transform: uppercase;
+            border-radius: 50px;
+
+            @media (min-width: $breekpunt-md) {
+                margin: 30px;
+            }
+        }
+
+
+        input[type=signin] {
+            width: 100%;
+            padding: 12px;
+            display: inline-block;
+            box-sizing: border-box;
+            font-family: $fontset1;
+            font-weight: 800;
+            font-size: 1rem;
+            color: $color2;
+            text-align: center;
+            margin: 16px 0px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            cursor: pointer;
+
+            @media (min-width: $breekpunt-md) {
+                margin: 30px;
+
+            }
+
+        }
+
+
+        input[type=signin]:hover {
+            background-color: $color3;
+            color: $color1;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+.site-footer {
+    background-color: $color1;
+    color: $color4;
+    padding: 0 20px;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+
+    .links {
+        p {
+            font-family: $fontset2;
+            color: $color2;
+            text-align: center;
+            line-height: 60px;
+
+            @media (min-width: $breekpunt-md) {
+                text-align: left;
+            }
+        }
+
+    }
+
+    .rechts {
+        .footer-list {
+            display: flex;
+            list-style: none;
+            line-height: 60px;
+            margin-left: -20px;
+
+
+            @media (min-width: $breekpunt-md) {
+
+                justify-content: flex-end;
+                margin-left: 10px;
+            }
+
+        }
+
+        .fa {
+            text-decoration: none;
+            color: $color3 !important;
+            font-size: 1.2rem;
+            padding-left: 80px;
+
+        }
+
+
+    }
+
+
+}
